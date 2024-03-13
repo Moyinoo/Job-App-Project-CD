@@ -3,17 +3,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: demoapp-ingress
+  name: moyin-demo-app-ingress
   labels:
     helm.sh/chart: ingress-0.1.0
     app.kubernetes.io/name: ingress
-    app.kubernetes.io/instance: demoapp
+    app.kubernetes.io/instance: moyin-demo-app
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
 spec:
   ingressClassName: nginx
   rules:
-    - host: "moyinopoola.com"
+    - host: "moyin-demo-app.prod.moyinopoola.com"
       http:
         paths:
           - path: /api

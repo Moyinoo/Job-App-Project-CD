@@ -11,12 +11,12 @@ spec:
   name: prod-lambda
   packageType: Image
   code:
-    imageURI: 841483048185.dkr.ecr.us-east-1.amazonaws.com/prod/lambda:5d5d7a85
-  role: arn:aws:iam::841483048185:role/prod-lambda-execution-role
+    imageURI: 975050185389.dkr.ecr.us-east-1.amazonaws.com/prod/lambda:86fac5d1
+  role: arn:aws:iam::975050185389:role/prod-lambda-execution-role
   description: function created by ACK lambda-controller
   timeout: 30
   memorySize: 256
   environment:
     variables:
-      S3_BUCKET_NAME: prod-app-output-files-841483048185
+      S3_BUCKET_NAME: prod-app-output-files-975050185389
       DYNAMODB_TABLE_NAME: prod-pdf-files-per-user-descriptors

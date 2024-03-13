@@ -7,7 +7,7 @@ metadata:
   labels:
     helm.sh/chart: ui-0.1.0
     app.kubernetes.io/name: ui
-    app.kubernetes.io/instance: demoapp
+    app.kubernetes.io/instance: moyin-demo-app
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
 spec:
@@ -15,12 +15,12 @@ spec:
   selector:
     matchLabels:
       app.kubernetes.io/name: ui
-      app.kubernetes.io/instance: demoapp
+      app.kubernetes.io/instance: moyin-demo-app
   template:
     metadata:
       labels:
         app.kubernetes.io/name: ui
-        app.kubernetes.io/instance: demoapp
+        app.kubernetes.io/instance: moyin-demo-app
     spec:
       serviceAccountName: default
       securityContext:
@@ -32,7 +32,7 @@ spec:
                 name: ui
           securityContext:
             {}
-          image: "841483048185.dkr.ecr.us-east-1.amazonaws.com/prod/ui:5d5d7a85"
+          image: "975050185389.dkr.ecr.us-east-1.amazonaws.com/prod/ui:86fac5d1"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
