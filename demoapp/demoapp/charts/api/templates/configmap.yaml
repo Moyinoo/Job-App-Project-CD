@@ -7,7 +7,7 @@ metadata:
   labels:
     helm.sh/chart: api-0.1.0
     app.kubernetes.io/name: api
-    app.kubernetes.io/instance: moyin-demo-app
+    app.kubernetes.io/instance: demoapp
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
 data:
